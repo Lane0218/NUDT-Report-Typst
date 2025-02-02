@@ -91,6 +91,14 @@ typst compile main.typ
 + 一级有序列表
 ```
 
+## 👀 预览效果
+完整示例PDF见[main.pdf](https://github.com/Lane0218/NUDT-Report-Typst/blob/master/main.pdf)
+
+<div style="display: flex; justify-content: space-between; gap: 0px;">
+  <img src="https://laneljc-1321736255.cos.ap-nanjing.myqcloud.com/pic/202502022323174.png" width="50%" alt="风车车涡轮启动">
+  <img src="https://laneljc-1321736255.cos.ap-nanjing.myqcloud.com/pic/202502022323628.png" width="50%" alt="假老练闪现时刻">
+</div>
+
 ## 📚 资源支持
 
 - [Typst官方文档](https://typst.app/docs/)
