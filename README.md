@@ -37,9 +37,9 @@ typst compile main.typ
 ## 📂 项目结构
 
 ```
-├── fonts/                # 专用字体库
-│   ├── SimHei.ttf
-│   └── SourceHanSerif.ttf...
+├── fonts/                # 模板字体库
+│   ├── simhei.ttf
+│   └── times.ttf...
 ├── pic/                  # 图片资源目录
 ├── config.typ            # 全局格式配置
 ├── main.typ              # 主文档入口
@@ -51,7 +51,7 @@ typst compile main.typ
 ```typst
 // main.typ
 #show: project.with(
-  title: "用ANTLR实现SysY词法/语法分析器",
+  title: "基于猫和老鼠行为学数据的实证分析",
   author: "风车车",
   
   infos: (
