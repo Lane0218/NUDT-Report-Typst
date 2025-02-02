@@ -1,8 +1,6 @@
-# 🚀 NUDT-实验报告Typst模板
+# 🚀 NUDT-本科实验报告-Typst模板
 
-![Typst](https://img.shields.io/badge/Built_with-Typst-239BAD) ![License](https://img.shields.io/github/license/Lane0218/NUDT-Report-Typst)
-
-国防科技大学课程实验报告专用Typst模板，提供符合学校规范的格式预设与智能排版能力，助你快速生成专业实验报告！
+![Typst](https://img.shields.io/badge/Built_with-Typst-239BAD)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🌟 功能特性
 
@@ -48,84 +46,52 @@ typst compile main.typ
 └── README.md             # 说明文档
 ```
 
-## ⚙️ 核心配置
-
-### 格式预设
-
-```typst
-// config.typ
-set page(
-  margins: 3cm,
-  footer-margin: 2.5cm,
-  ...
-)
-
-// 标题格式
-show heading: it => [
-  text(weight: "bold", ..it.body)
-]
-```
-
-### 文档设置
+## 📝 使用指南
 
 ```typst
 // main.typ
-#let title = "实验名称"  // 封面标题
-#let infos = (          // 学员信息
-  姓名: "张三",
-  学号: "2023123456",
-  单位: "国防科技大学",
+#show: project.with(
+  title: "用ANTLR实现SysY词法/语法分析器",
+  author: "风车车",
+  
+  infos: (
+    (key: [学#h(2em)员:], value: "风车车"),
+    (key: [学#h(2em)号:], value: "202200000000"),
+    (key: [培养类型:], value: "地方本科生"),
+    (key: [年#h(2em)级:], value: "2022级"),
+    (key: [专#h(2em)业:], value: "计算机类"),
+    (key: [所属学院:], value: "计算机学院"),
+    (key: [指导教员:], value: "假老练"),
+    (key: [职#h(2em)称:], value: "教授"),
+    (key: [实#h(0.5em)验#h(0.5em)室:], value: "305-101"),
+    (key: [实验日期:], value: "2025年2月1日"),
+  ),
+
+  instructions_display: true,  // 是否显示填写说明
+  outline_display: true,        // 是否显示目录
 )
 ```
 
-## 📝 使用指南
+## ⚠️ 已知问题 & 临时解决方案
 
-### 内容编写
-
+### 伪粗体缺失问题
+当前暂不支持自动伪粗体生成，如需在**正文中实现加粗效果**，请使用以下语法临时切换到**思源宋体**：  
 ```typst
-= 实验一：网络协议分析  // 一级标题
-
-== 实验目的            // 二级标题
-
-实验旨在通过...（正文自动首行缩进2字符）
-
-=== 实验设备          // 三级标题
-1. 计算机
-2. 网络分析仪
-
-==== 注意事项         // 四级标题
-• 操作前检查设备
-◦ 记录实验数据
+#text(font: "Source Han Serif")[需要强调的*加粗内容*]
 ```
 
-### 功能开关
-
+### 二级有序列表样式定制
+可通过局部设置实现多级列表样式：  
 ```typst
-// 关闭填写说明
-#let instructions_display = false
-
-// 关闭目录生成
-#let outline_display = false
-```
-
-## 💡 高级定制
-
-通过修改`config.typ`文件可深度定制：
-
-```typst
-// 调整正文字号
-set text(size: 14pt)
-
-// 修改标题缩进
-show heading.where(level:4): set block(indent: 2em)
++ 一级有序列表
++ 一级有序列表
+  #set enum(numbering: "(1)",indent: 1pt)
+  + 二级有序列表
+  + 二级有序列表
++ 一级有序列表
 ```
 
 ## 📚 资源支持
 
 - [Typst官方文档](https://typst.app/docs/)
-- [中文交流社区](https://typst.cc/)
-- [模板问题反馈](https://github.com/Lane0218/NUDT-Report-Typst/issues)
-
----
-
-💻 **高效科研**，从规范排版开始！使用过程中遇到任何问题，欢迎提交Issue或加入Typst中文社区交流讨论~
+- [Typst中文交流社区](https://typst-doc-cn.github.io/guide/)
