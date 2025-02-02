@@ -1,6 +1,6 @@
 # 🚀 NUDT-本科实验报告-Typst模板
 
-![Typst](https://img.shields.io/badge/Built_with-Typst-239BAD)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Typst](https://img.shields.io/badge/Built_with-Typst-239BAD)  ![License: MIT](https://img.shields.io/github/license/Lane0218/NUDT-Report-Typst)
 
 ## 🌟 功能特性
 
@@ -91,13 +91,12 @@ typst compile main.typ
 + 一级有序列表
 ```
 
-## 👀 预览效果
+## 👀 效果预览
 完整示例PDF见[main.pdf](https://github.com/Lane0218/NUDT-Report-Typst/blob/master/main.pdf)
 
-<div style="display: flex; justify-content: space-between; gap: 0px;">
-  <img src="https://laneljc-1321736255.cos.ap-nanjing.myqcloud.com/pic/202502022323174.png" width="50%" alt="风车车涡轮启动">
-  <img src="https://laneljc-1321736255.cos.ap-nanjing.myqcloud.com/pic/202502022323628.png" width="50%" alt="假老练闪现时刻">
-</div>
+| ![量子纠缠态](https://laneljc-1321736255.cos.ap-nanjing.myqcloud.com/pic/202502022323174.png) | ![薛定谔的猫](https://laneljc-1321736255.cos.ap-nanjing.myqcloud.com/pic/202502022323628.png) |
+| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
+
 
 ## 📚 资源支持
 
